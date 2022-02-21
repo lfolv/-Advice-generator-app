@@ -1,0 +1,75 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: hsl(150, 100%, 66%);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(217, 19%, 24%);
+  font-size: 1rem;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.advice {
+  position: relative;
+  background-color: hsl(217, 19%, 38%);
+  max-width: 500px;
+  padding: 2rem 4rem 4.5rem 4rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.advice__id {
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.advice__text {
+  color: hsl(193, 38%, 86%);
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.advice__button {
+  position: absolute;
+  bottom: -1.5rem;
+}
+
+.button {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 0;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+.button__icon {
+  display: block;
+  width: 50%;
+  height: 50%;
+}
+
+.button__text {
+  display: none;
+}
